@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #F8F9FA, #c25fa9, #db62b7);
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #ee39b8;
+}
+
+.nav-link {
+    color: rgb(124, 1, 97);
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #72245e;
+    transform: scale(1.05);
+    font-size: 20px;
+}
+
+.navbar {
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.logo-1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.img-mother {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 500px;
+    width: 550px;
+    border-radius: 50%;
+    border: 5px solid #070707;
+}
+
+.img-mother:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.9s;
+    cursor: pointer;
+    animation-name: __flash;
+    animation: slideFade 0.5s ease forwards;
+}
+
+.mother-hero-section {
+    background: rgba(250, 117, 195, 0.795);
+    padding: 30px;
+    border-radius: 15px;
+}
+.about-section {
+    background: rgba(250, 117, 195, 0.795);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.about-section:hover {
+    background: rgba(248, 151, 208, 0.795);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.mother-hero-section:hover {
+    background: rgba(248, 151, 208, 0.795);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+.heading1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+.heading1:hover {
+    font-size: 50px;
+    font-weight: 650;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    transition: 0.9s;
+    cursor: pointer;
+    animation-name: __flash;
+    animation: slideFade 0.5s ease forwards;
+
+}
+@keyframes slideFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mother-para {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn {
+    background-color: #ff05f3;
+    border-radius: 10px;
+    border: 2px solid rgb(112, 105, 2);
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    width: fit-content;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
+    font-style: italic;
+}
+
+.btn:hover {
+    border-radius: 10px;
+    border: 2px solid rgb(95, 81, 0);
+    color: rgb(16, 16, 16);
+    background-color: #ffb8f6;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mom-section {
+    text-align: center;
+    background: rgba(250, 117, 195, 0.795);
+}
+
+.heading {
+    font-size: 42px;
+    color: #d63384;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.mom-card {
+    width: 250px;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+
+.mom-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 50px;
+    color: #ff4d88;
+    margin-bottom: 20px;
+}
+
+.mom-card h2 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+.mom-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* ========== Responsive Design ========== */
+
+@media (max-width: 992px) {
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .mom-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 40px 15px;
+    }
+
+    .heading {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .mom-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .icon {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .heading {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .mom-card {
+        padding: 25px 18px;
+    }
+
+    .mom-card h2 {
+        font-size: 22px;
+    }
+
+    .mom-card p {
+        font-size: 14px;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+}
